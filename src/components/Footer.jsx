@@ -138,7 +138,7 @@ const Footer = ({ hideLogos = false }) => {
                 <div>
                   <p className="text-[#4b4b4b] text-[13px] mb-1">Email</p>
                   <a href="mailto:hello@appversal.ai" className="font-semibold text-[#1a1a1a] text-[16px] hover:text-red-500 transition-colors">
-                    support@appversal.ai
+                    support@appversal.comß
                   </a>
                 </div>
               </div>
