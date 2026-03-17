@@ -3,7 +3,7 @@ import FloatingBalls from "./FloatingBalls";
 
 const HomeHero = () => {
   return (
-    <section className="homehero relative w-full h-[36vh] sm:h-[44vh] md:min-h-screen bg-white overflow-hidden">
+    <section className="homehero relative w-full h-[36vh] sm:h-[44vh] md:min-h-screen bg-white overflow-hidden lg:overflow-visible">
       <style>{`
         @keyframes slideUpIn {
           from {
@@ -124,7 +124,7 @@ const HomeHero = () => {
 
           .text-fill-layer,
           .text-stroke-layer {
-            font-size: clamp(120px, 14vw, 240px) !important;
+            font-size: clamp(110px, 12vw, 220px) !important;
             -webkit-backface-visibility: hidden;
             -webkit-font-smoothing: antialiased;
           }
@@ -162,7 +162,7 @@ const HomeHero = () => {
         @media (min-width: 2560px) {
           .text-fill-layer,
           .text-stroke-layer {
-            font-size: 260px !important;
+            font-size: 240px !important;
             -webkit-backface-visibility: hidden;
             -webkit-font-smoothing: antialiased;
           }
@@ -212,7 +212,7 @@ const HomeHero = () => {
       />
 
       {/* TEXT */}
-      <div className="absolute inset-x-0 top-[82%] sm:top-[78%] md:top-[50%] -translate-y-1/2 z-10 px-[1.4%] pl-[clamp(0.6rem,4vw,5rem)] flex flex-col items-start">
+      <div className="absolute inset-x-0 top-[82%] sm:top-[78%] md:top-[50%] -translate-y-1/2 z-10 px-[1.4%] pl-[clamp(0.6rem,3vw,3rem)] flex flex-col items-start">
 
         <p className="w-full text-left text-[clamp(14px,3.8vw,32px)] font-bold text-red-800 animate-slide-up-1">
           We are your
@@ -230,7 +230,7 @@ const HomeHero = () => {
       </div>
 
         {/* TEXT STROKE LAYER - On Top of Robot */}
-      <div className="absolute inset-x-0 top-[82%] sm:top-[78%] md:top-[50%] -translate-y-1/2 z-40 px-[1.4%] pl-[clamp(0.6rem,4vw,5rem)] flex flex-col items-start">
+      <div className="absolute inset-x-0 top-[82%] sm:top-[78%] md:top-[50%] -translate-y-1/2 z-40 px-[1.4%] pl-[clamp(0.6rem,3vw,3rem)] flex flex-col items-start">
         <p className="w-full text-left text-[clamp(14px,3.8vw,32px)] font-bold invisible animate-slide-up-1">
           We are your
         </p>

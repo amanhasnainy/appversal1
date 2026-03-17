@@ -161,16 +161,16 @@ const VikerGames = () => {
         </div>
       </div>
 
-      <section className="w-full py-16 mt-8 md:mt-16 px-16 md:px-8 lg:px-16">
-        <h2 className="text-[32px] md:text-[40px] font-bold text-black mb-6">About Viker Games</h2>
-        <p className="text-[18px] md:text-[20px] text-gray-800 mb-10 leading-relaxed max-w-[1400px]">
+      <section className="w-full py-16 mt-8 md:mt-16 px-4 md:px-8 lg:px-12">
+        <h2 className="text-[32px] md:text-[40px] font-bold text-black mb-6 text-center mx-auto max-w-[1200px]">About Viker Games</h2>
+        <p className="text-[18px] md:text-[20px] text-gray-800 mb-10 leading-relaxed max-w-[1200px] mx-auto text-center">
           Viker Games is a mobile game studio in London, UK, known for casual and puzzle games. They aim to enhance global growth and app store visibility by partnering with ASOWin for App Store Optimization.
         </p>
-        <div className="w-full">
+        <div className="w-full flex justify-center">
           <img
             src="/vikarframe.png"
             alt="Viker Games Overview"
-            className="viker-hero-image w-[1300px] h-auto object-cover rounded-2xl border border-gray-200 shadow-sm"
+            className="viker-hero-image w-full max-w-[1400px] h-auto object-cover rounded-2xl border border-gray-200 shadow-sm"
           />
         </div>
       </section>
@@ -195,7 +195,7 @@ const VikerGames = () => {
           />
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-6 md:px-12 relative z-20 w-full">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12 relative z-20 w-full">
           {/* Text Content */}
           <div className="max-w-[700px] lg:max-w-[800px]">
             <h2 className="text-[36px] md:text-[45px] font-bold text-black border-b-0 inline-block mb-10">
@@ -231,7 +231,7 @@ const VikerGames = () => {
 
       {/* The AppVersal | ASOWin Solution Section */}
       <section className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-12 bg-white solution-section">
-        <div className="max-w-[1300px] mx-auto w-full">
+        <div className="max-w-[1600px] mx-auto w-full">
           <h2 className="text-[32px] md:text-[40px] font-bold text-black mb-6">
             The AppVersal \ ASOWin Solution
           </h2>
@@ -301,7 +301,7 @@ const VikerGames = () => {
 
       {/* Results Section */}
       <section className="w-full relative overflow-hidden py-24 md:py-32 bg-white">
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 lg:px-12 relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 lg:px-12 relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
           {/* Text Content */}
           <div className="w-full max-w-[600px] lg:max-w-none lg:w-[45%] z-20">
             <h2 className="text-[36px] md:text-[45px] font-bold text-black mb-8">
@@ -341,7 +341,7 @@ const VikerGames = () => {
 
       {/* Call to Action Section */}
       <section className="w-full py-20 px-4 md:px-8 lg:px-12 bg-white pb-32">
-        <div className="max-w-[1300px] mx-auto w-full">
+        <div className="max-w-[1600px] mx-auto w-full">
           <div className="max-w-[900px]">
             <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-bold text-black mb-4 leading-tight">
               🚀 Want to grow your app organically?

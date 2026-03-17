@@ -134,7 +134,7 @@ const Services = () => {
         -webkit-backface-visibility: hidden;
       }
       .service-title h3 {
-        font-size: calc(1.75rem + 1.2vw) !important;
+        font-size: calc(1.1rem + 0.6vw) !important;
       }
       .service-description p {
         font-size: calc(0.95rem + 0.25vw) !important;
@@ -159,7 +159,7 @@ const Services = () => {
       }
 
       .service-title h3 {
-        font-size: 32px !important;
+        font-size: 28px !important;
         line-height: 1.06 !important;
       }
 
@@ -186,7 +186,7 @@ const Services = () => {
 
       /* cap title size so it wraps cleanly inside wider cards */
       .service-title h3 {
-        font-size: 36px !important;
+        font-size: 32px !important;
         line-height: 1.05 !important;
       }
 
@@ -348,7 +348,7 @@ const Services = () => {
                 <div className="service-card-wrapper w-full h-auto md:h-full bg-white hover:bg-[#8B0000] border border-gray-100 hover:border-[#8B0000] cursor-pointer relative overflow-hidden flex flex-col justify-start items-center md:items-start text-center md:text-left px-4 md:px-0 py-6 md:py-8">
                   {/* Title - always visible */}
                   <div className="service-title px-8">
-                    <h3 className="text-2xl md:text-3xl font-bold leading-tight text-[#8B0000] group-hover:text-white transition-colors duration-800">
+                    <h3 className="text-xl md:text-2xl font-bold leading-tight text-[#8B0000] group-hover:text-white transition-colors duration-800">
                       {service.title}
                     </h3>
                   </div>

@@ -66,6 +66,21 @@ const BajajFinserv = () => {
                 backface-visibility: hidden !important;
               }
           }
+
+          /* Push the decorative blob lower on very large screens */
+          @media (min-width: 1600px) {
+            .bajaj-blob {
+              transform: translateY(35%) !important;
+              -webkit-transform: translateY(35%) !important;
+            }
+          }
+
+          @media (min-width: 2560px) {
+            .bajaj-blob {
+              transform: translateY(45%) !important;
+              -webkit-transform: translateY(45%) !important;
+            }
+          }
         `}</style>
         {/* Top hero container */}
         <div className="max-w-full mx-4 px-4 md:px-4 pt-8 pb-7 relative z-30 bajaj-hero-top">
@@ -109,16 +124,16 @@ const BajajFinserv = () => {
       </div>
 
       {/* About Section */}
-      <section className="w-full py-16 mt-8 md:mt-16 px-4 md:px-8 lg:px-16">
-        <h2 className="text-[32px] md:text-[40px] font-bold text-black mb-6">About Bajaj Finserv</h2>
-        <p className="text-[18px] md:text-[20px] text-gray-800 mb-10 leading-relaxed max-w-[1400px]">
+      <section className="w-full py-16 mt-8 md:mt-16 px-4 md:px-8 lg:px-12">
+        <h2 className="text-[32px] md:text-[40px] font-bold text-black mb-6 text-center mx-auto max-w-[1200px]">About Bajaj Finserv</h2>
+        <p className="text-[18px] md:text-[20px] text-gray-800 mb-10 leading-relaxed max-w-[1200px] mx-auto text-center">
           Bajaj Finserv is one of India&apos;s leading financial services companies, offering a wide range of products including loans, insurance, and digital financial solutions through its highly popular mobile application used by millions of customers.
         </p>
-        <div className="w-full">
+        <div className="w-full flex justify-center">
           <img
             src="/bajajbanner.png"
             alt="Bajaj Finserv Overview"
-            className="bajaj-hero-image w-full max-w-[1300px] h-auto object-cover rounded-2xl shadow-sm"
+            className="bajaj-hero-image w-full max-w-[1400px] h-auto object-cover rounded-2xl shadow-sm"
           />
         </div>
       </section>
@@ -143,7 +158,7 @@ const BajajFinserv = () => {
           />
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-6 md:px-12 relative z-20 w-full">
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12 relative z-20 w-full">
           <div className="max-w-[700px] lg:max-w-[800px]">
             <h2 className="text-[36px] md:text-[45px] font-bold text-black mb-10">
               The Challenges
@@ -198,7 +213,7 @@ const BajajFinserv = () => {
         </div>
 
         {/* Text Content */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 lg:px-12 relative z-20 w-full">
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 lg:px-12 relative z-20 w-full">
           <div className="max-w-[600px] lg:max-w-[700px]">
             <h2 className="text-[36px] md:text-[45px] font-bold text-black mb-6">
               The Solution
@@ -261,7 +276,7 @@ const BajajFinserv = () => {
             }
           }
         `}</style>
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 lg:px-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 lg:px-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <div className="flex-1 max-w-[600px] z-20">
             <h2 className="text-[36px] md:text-[45px] font-bold text-black mb-8">
@@ -289,11 +304,11 @@ const BajajFinserv = () => {
           </div>
 
           {/* Image Content */}
-          <div className="w-full md:w-1/2 flex justify-end absolute md:relative right-[-20%] md:right-[-10%] top-1/2 -translate-y-3/2 opacity-20 md:opacity-100 z-0 results-image-abs">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end relative md:relative z-0 results-image-abs">
             <img
               src="/banner3.png"
               alt=""
-              className="w-[80%] md:w-[120%] max-w-none h-auto object-contain object-right"
+              className="w-full max-w-[720px] h-auto object-contain object-right"
             />
           </div>
           {/* Mobile fallback: image shown below text on small screens */}
@@ -305,7 +320,7 @@ const BajajFinserv = () => {
 
       {/* Call to Action Section */}
       <section className="w-full py-20 px-4 md:px-8 lg:px-12 bg-white pb-32">
-        <div className="max-w-[1300px] mx-auto w-full">
+        <div className="max-w-[1600px] mx-auto w-full">
           <div className="max-w-[900px]">
             <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-bold text-black mb-4 leading-tight">
               🚀 Want to grow your app organically?
