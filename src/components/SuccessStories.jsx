@@ -159,7 +159,26 @@ const SuccessStories = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="animated-border-card rounded-[24px] p-5 md:p-6 flex flex-col items-start relative overflow-hidden transition-all duration-300 hover:scale-[1.02] w-full md:w-[380px] h-auto md:h-[310px]"
+                className="animated-border-card rounded-[24px] p-5 md:p-6 flex flex-col items-start relative overflow-hidden transition-all duration-300 hover:scale-[1.02] w-full md:w-[380px] h-auto md:h-[310px] cursor-pointer"
+                onClick={() => {
+                  const slug = story.company
+                    .toLowerCase()
+                    .replace(/\s+/g, '-')
+                    .replace(/[^a-z0-9-]/g, '');
+                  window.scrollTo(0, 0);
+                  navigate(`/case-study/${slug}`);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    const slug = story.company
+                      .toLowerCase()
+                      .replace(/\s+/g, '-')
+                      .replace(/[^a-z0-9-]/g, '');
+                    window.scrollTo(0, 0);
+                    navigate(`/case-study/${slug}`);
+                  }
+                }}
+                tabIndex={0}
                 style={{
                   boxShadow: '0 20px 40px -10px rgba(255, 35, 63, 0.15), 0 0 20px 0px rgba(255, 35, 63, 0.1)',
                 }}
@@ -189,21 +208,10 @@ const SuccessStories = () => {
                   {story.description}
                 </p>
 
-                <button
-                  type="button"
-                  onClick={() => {
-                    const slug = story.company
-                      .toLowerCase()
-                      .replace(/\s+/g, '-')
-                      .replace(/[^a-z0-9-]/g, '');
-                    window.scrollTo(0, 0);
-                    navigate(`/case-study/${slug}`);
-                  }}
-                  className="mt-auto flex items-center gap-1.5 text-[#D21B32] text-sm font-semibold hover:gap-3 transition-all duration-200 group"
-                >
-                  Read More
+                <div className="mt-auto flex items-center gap-1.5 text-[#D21B32] text-sm font-semibold transition-all duration-200 group">
+                  <span className="underline">Read More</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-                </button>
+                </div>
               </motion.article>
             ))}
           </div>
