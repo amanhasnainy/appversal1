@@ -71,7 +71,7 @@ const Footer = ({ hideLogos = false }) => {
                 AI-powered app marketing infrastructure for global enterprises. Building the future of growth technology.
               </p>
               <div className="flex gap-4 mt-2">
-                <a href="#" className="flex justify-center items-center w-8 h-8 text-[#1a1a1a] hover:text-red-500 transition-colors" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/appversal" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center w-8 h-8 text-[#1a1a1a] hover:text-red-500 transition-colors" aria-label="LinkedIn">
                   <FaLinkedinIn className="w-4 h-4" />
                 </a>
                 {/* Removed Twitter, Instagram, and social email icons per request */}

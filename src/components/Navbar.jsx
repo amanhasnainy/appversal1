@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { Link, useLocation } from 'react-router-dom';
-import FloatingBalls from './FloatingBalls';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,9 +64,7 @@ const Navbar = () => {
               <img src="/logo.png" alt="AppVersal" className="h-14 w-auto" />
             </Link>
 
-            <div className="hidden md:block relative w-12 h-12 overflow-hidden">
-              <FloatingBalls variant="single" />
-            </div>
+            {/* FloatingBalls removed from navbar to declutter header on desktop */}
           </div>
 
           <div className="hidden md:flex items-center justify-end gap-12 font-medium text-base">
