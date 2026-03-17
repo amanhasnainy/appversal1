@@ -301,9 +301,9 @@ const VikerGames = () => {
 
       {/* Results Section */}
       <section className="w-full relative overflow-hidden py-24 md:py-32 bg-white">
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 lg:px-12 relative z-10 flex flex-col items-start justify-between gap-12">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 lg:px-12 relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
           {/* Text Content */}
-          <div className="flex-1 max-w-[600px] z-20">
+          <div className="w-full max-w-[600px] lg:max-w-none lg:w-[45%] z-20">
             <h2 className="text-[36px] md:text-[45px] font-bold text-black mb-8">
               Results
             </h2>
@@ -329,7 +329,7 @@ const VikerGames = () => {
           </div>
 
           {/* Image Content */}
-          <div className="w-full flex justify-center md:justify-start">
+          <div className="w-full lg:w-[55%] flex justify-center lg:justify-end">
             <img
               src="/vikarbanner.png"
               alt="Viker Games Results on App Store"
